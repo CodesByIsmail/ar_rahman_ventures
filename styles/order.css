@@ -1,0 +1,27 @@
+.order__body {
+    color: var(--color-primary);
+    /* text-align: center; */
+}
+
+.order__wrapper {
+    height: 100vh;
+    display: flex;
+    /* background: #ff6d00; */
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border-radius: 10px;
+    background: #ff6d00;
+    padding: 3rem 1rem;
+    color: var(--universal-white);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.welcome {
+    padding: 0;
+    margin-bottom: 0;
+}
