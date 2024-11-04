@@ -10,8 +10,10 @@
     --color-primary: #ff6d00;
     --color-secondary: #ff9201;
     --color-tetiary: #ffab41;
-    --color-succes: #ffd181;
+    --color-success: #ffd181;
     --universal-white: #fff;
+    --universal-greyish: #fbf7f7;
+
     --universal-dark: #000;
 
     --width-for-tablets: 90%;
@@ -81,19 +83,21 @@ nav #close-menu-btn,
 .nav__menu {
     display: flex;
     gap: 3rem;
+    color: #fff;
+    /* background: white; */
 }
 
 .nav__menu a {
     color: var(--universal-white);
     padding: 0.8rem;
-    font-size: 01rem;
+    font-size: 1rem;
     border-radius: 5px;
     transition: var(--transition);
-    /* background: var(--color-succes); */
+    background: var(--color-succes);
 }
 
 .nav__menu a:hover {
-    color: var(--color-succes);
+    /* color: var(--color-succes); */
 }
 
 /* header starts here */
@@ -149,6 +153,8 @@ main {
 .product__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .product img {
@@ -249,17 +255,18 @@ footer h1 {
         margin-bottom: 3rem;
     } */
 
-    .products {
+    /* .products {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 3rem;
-    }
+    } */
 
     .product__wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        /* margin-top: 2rem; */
+        /* display: grid; */
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* gap: 2rem; */
     }
 }
 
@@ -352,19 +359,15 @@ footer h1 {
         text-decoration: 2px var(--color-primary) underline;
     }
 
-    .product__wrapper {
-        /* width: 20%;
-        margin: 0 auto; */
-        /* gap: 1rem; */
-    }
-
-    .product > div {
-        /* max-width: 80%; */
-        /* margin: 0 auto 3rem; */
-    }
-
     .header__container {
         text-align: center;
+    }
+
+    .product__wrapper {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
 

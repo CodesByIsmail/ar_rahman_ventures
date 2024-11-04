@@ -20,15 +20,24 @@ let userName;
 
 function getUserName() {
     let userName = prompt('Input our username:');
+    let confirmedUserName;
+    confirmedUserName = userName;
+
+    //if username is invalid
+    if (userName === '000' || userName === 'ismail1401')
+    {
+        confirmedUserName = 'User';
+    }
+
     // modify username
-    let firstLetterOfUserName = userName.slice(0, 1);
-    let remainingLetterOfUserName = userName.slice(1, userName.length);
+    let firstLetterOfUserName = confirmedUserName.slice(0, 1);
+    let remainingLetterOfUserName = confirmedUserName.slice(1, confirmedUserName.length);
     firstLetterOfUserName = firstLetterOfUserName.toUpperCase();
     remainingLetterOfUserName = remainingLetterOfUserName.toLowerCase();
-    userName = firstLetterOfUserName + remainingLetterOfUserName;
+    confirmedUserName = firstLetterOfUserName + remainingLetterOfUserName;
     // welcome to user
-    alert('Welcome ' + userName);
-    generatedUsernName.textContent = userName;
+    alert('Welcome ' + confirmedUserName);
+    generatedUsernName.textContent = confirmedUserName;
 }
 
 getUserName();
@@ -45,4 +54,4 @@ const navMenuIndividual = document.querySelector('#nav-menu-individual');
 
 closeBtn.addEventListener('click', onClose);
 openBtn.addEventListener('click', onOpen);
-navMenuIndividual.addEventListener('click', onClose());
+// navMenuIndividual.addEventListener('click', onClose());

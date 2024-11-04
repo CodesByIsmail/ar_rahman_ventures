@@ -1,34 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Order from Ar-Rahman Ventures</title>
-        <link rel="stylesheet" href="/styles/styles.css" />
-        <link rel="stylesheet" href="/styles/order.css" />
-    </head>
-    <body class="order__body">
-        <div class="order__wrapper">
-            <div class="order__container">
-                <h2 class="welcome">Welcome!</h2>
-                <h3 class="fill">Kindly fill this form to continue:</h3>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ar-Rahman ventures</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/order.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+
+
+    <!-- <script src="main.js" defer></script> -->
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav__container">
+            <div>AR-RAHMAN VENTURES</div>
+            <ul class="nav__menu">
+                <a id="nav-menu-individual" href="index.html">
+                    <li>Home</li>
+                </a>
+                <a id="nav-menu-individual" href="#Services">
+                    <li>Services</li>
+                </a>
+                <a id="nav-menu-individual" href="order.html">
+                    <li>Order</li>
+                </a>
+                <a id="nav-menu-individual" href="#footer">
+                    <li>Contact</li>
+                </a>
+            </ul>
+
+            <button id="open-menu-btn">
+                <i class="uil uil-bars"></i>
+            </button>
+            <button id="close-menu-btn">
+                <i class="uil uil-multiply"></i>
+            </button>
+        </div>
+    </nav>
+
+
+
+    <section class="order__wrapper">
+        <div class="order__heading">
+            <h2 class="welcome">Welcome!</h2>
+            <h3 class="fill">Kindly fill this form to continue:</h3>
+        </div>
+  
+        <div class="order__subcontainer">
+
+            <div class="order__container-container">
+
+                <aside class="order__aside">
+                    <h2> Make your order
+                    </h2>
+                    <p>We look forward to making business with you we can't wait to have your goods delivered. Thank
+                        you!
+                    </p>
+                    <ul class="contact__details">
+                        <li>
+                            <i class="uil uil-phone-times"></i>
+                            <h5>+2347043083795</h5>
+                        </li>
+                        <li>
+                            <i class="uil uil-envelope"></i>
+                            <h5>support@ar_rahman.com</h5>
+                        </li>
+                        <li>
+                            <i class="uil uil-location-point"></i>
+                            <h5>Osun, Nigeria</h5>
+                        </li>
+                    </ul>
+
+                   <!-- <div class="aside__socials">
+                    <a href=""><i class="uil uil"></i></a>
+                   </div> -->
+                </aside>
+
+                <form class="order__form" action="">
+                    <div class="form__name">
+                        <input type="text" name="First Name" placeholder="First Name" required>
+                        <input type="text" name="Last Name" placeholder="Last Name" required>
+                    </div>
+                    <div class="send__order">
+                        <input name="Home Address" placeholder="Your Home Address" required>
+                        <input type="tel" name="GSM" placeholder="Your Phone Number" required>
+
+
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="7" required placeholder="Insert your orders here!"></textarea>
+                    </div>
+                    <button class="order__submit " type="submit">Send Order</button>
+                </form>
+
+            </div>
+    </section>
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <h1>Ar-Rahman Ventures</h1>
+            <div class="footer__info">
                 <div>
-                    <form action="">
-                        <div>
-                            <label for="name">Full Name:</label>
-                            <input type="text" />
-                        </div>
-                        <div>
-                            <label for="Address">Home Addres:</label>
-                            <input type="text" />
-                        </div>
-                        <div>
-                            <label for="number">Phone Number:</label>
-                            <input type="number" />
-                        </div>
-                    </form>
+                    <h3>Contact Info</h3>
+                    <p>+234 803 8600 612</p>
+                    <p>arrahmanventures@support.com</p>
+                </div>
+                <div>
+                    <h3>Address</h3>
+                    <p>C2, Adeleke Street, Osogbo, Osun State.</p>
+                    <p>Oke Baale, Abe Obi, Tanishi Ayegun.</p>
+                </div>
+                <div>
+                    <h3>Social Handle</h3>
+                    <p class="social">IG: <a href="">Ar_rahman_ventures</a></p>
+                    <p class="social">FB: <a href="">Ar-Rahman Ventures</a></p>
                 </div>
             </div>
         </div>
-    </body>
+        </div>
+
+    </footer>
+</body>
+
 </html>
